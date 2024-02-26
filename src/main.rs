@@ -21,8 +21,9 @@ mod tests {
 
     #[test]
     fn basic_happy_path_test() {
-        let input = "hello";
-        let output = reverse_str("olleh");
-        assert_eq!(input, output.to_owned());
+        let modified = "olleh";
+        let original = "hello";
+        let result = reverse_str(original);
+        assert_eq!(modified, result.to_owned());
     }
 }
